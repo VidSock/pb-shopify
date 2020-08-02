@@ -8,14 +8,15 @@ import { useStaticQuery, graphql } from 'gatsby';
 import {
   MenuContextProvider,
   useMenuContext,
-} from '../../../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Menu/context';
+} from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Menu/context';
 
 
 import {
   SearchContextProvider,
   useSearchContext,
-} from '../../../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Search/context';
-import Navbar from '../../../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Navbar';
+} from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Search/context';
+
+import Navbar from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Navbar';
 import Footer from './Footer';
 import theme from '../gatsby-plugin-theme-ui/index';
 
