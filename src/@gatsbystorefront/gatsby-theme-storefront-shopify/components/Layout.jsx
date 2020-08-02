@@ -8,15 +8,15 @@ import { useStaticQuery, graphql } from 'gatsby';
 import {
   MenuContextProvider,
   useMenuContext,
-} from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Menu/context';
+} from '../components/Menu/context';
 
 
 import {
   SearchContextProvider,
   useSearchContext,
-} from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Search/context';
+} from '../components/Search/context';
 
-import Navbar from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Navbar';
+import Navbar from './Navbar';
 import Footer from './Footer';
 import theme from '../gatsby-plugin-theme-ui/index';
 

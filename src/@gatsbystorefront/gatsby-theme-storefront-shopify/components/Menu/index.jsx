@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Flex, Box } from 'rebass';
 import GatsbyLink from 'gatsby-link';
 import styled from '@emotion/styled';
-import { useMenuContext } from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Menu/context';
+import { useMenuContext } from './context';
 import ChevronLeft from '../Icons/ChevronLeft';
 import Burger from '../Icons/Burger';
 import Close from '../Icons/Close';
