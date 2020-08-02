@@ -1,0 +1,5 @@
+{
+  "pageTitleTemplate": "%s",
+  "ariaBackButtonLabel": "previous product",
+  "ariaNextButtonLabel": "next product"
+}
