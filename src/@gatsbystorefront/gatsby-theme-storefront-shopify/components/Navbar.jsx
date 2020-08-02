@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 import logo from '../../../images/pb-logo-color.png'
 import Menu from './Menu';
-import Search from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/Components/Search';
+import Search from './Search';
 import ShoppingBag from './Icons/ShoppingBag';
 import ShoppingCart from './Icons/ShoppingCart';
 import strings from './strings.json';
