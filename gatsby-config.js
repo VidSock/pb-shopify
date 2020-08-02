@@ -73,14 +73,14 @@ module.exports = {
             {
               name: 'Memorial Day',
               type: 'product',
-              handle: 'designer-kitchen-apron',
+              handle: 'gemstone-diamond-fleur-de-lis-ring',
               textColor: 'white',
               textBgColor: 'primary',
             },
             {
               name: 'ship',
               type: 'collection',
-              handle: 'free-shipping',
+              handle: 'frontpage',
               textColor: 'white',
               textBgColor: 'black',
             },
@@ -90,14 +90,14 @@ module.exports = {
         {
           name: '',
           type: 'collection',
-          handle: 'free-shipping1',
+          handle: 'diamonds',
           textColor: 'white',
           textBgColor: 'primary',
         },
         {
           name: 'Photography',
           type: 'collection',
-          handle: 'twilightscapes-prints',
+          handle: 'frontpage',
           textColor: 'white',
           textBgColor: 'primary',
         },
