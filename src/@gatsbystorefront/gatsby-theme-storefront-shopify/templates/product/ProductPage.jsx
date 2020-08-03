@@ -187,7 +187,7 @@ function ProductPage({ data, pageContext, location }) {
 
             <Flex
           pt={3}
-          px={4}
+          px={0}
           mx="auto"
           style={{ maxWidth: 1300 }}
           fontFamily="body"
@@ -223,16 +223,21 @@ function ProductPage({ data, pageContext, location }) {
               </Box>
             </Flex> */}
 
-            <Flex mb={4}>
-              <Box mr={2}>
+            
+              <Box>
+              <div style={{width:'100%', display:'flex', justifyContent:'center', alignContent:'center', textAlign:'center', }}>
                 <ProductVariantAddToCart
                   amount={currentAmount}
                   cartUrl={cartUrl}
                 />
+                {/* <Text>{paymentsLabel}</Text>
+                <Payments payments={payments} /> */}
+                </div>
+                
               </Box>
-            </Flex>
+            
 
-            <Flex mb={4}>
+            <Flex mb={4} mt={4}>
               <Box>
                 <Text>{paymentsLabel}</Text>
                 <Payments payments={payments} />
