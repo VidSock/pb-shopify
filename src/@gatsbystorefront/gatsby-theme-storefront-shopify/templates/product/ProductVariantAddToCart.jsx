@@ -3,7 +3,7 @@ import { Button } from 'rebass';
 import { navigate } from 'gatsby';
 
 import useShopifyFunctions from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/hooks/useShopifyFunctions';
-import { useCurrentVariantContext } from './CurrentVariantContext';
+import { useCurrentVariantContext } from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/CurrentVariantContext';
 import strings from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/strings.json';
 
 const ProductVariantAddToCart = ({ amount, cartUrl }) => {
