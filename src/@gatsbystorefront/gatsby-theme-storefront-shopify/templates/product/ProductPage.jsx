@@ -155,14 +155,14 @@ function ProductPage({ data, pageContext, location }) {
             order={3}
           >
             {/* Breadcrumbs block 2 for desktop */}
-            {/* <Box sx={{ display: ['none', 'none', 'block'] }} pt={1}>
+            <Box sx={{ display: ['none', 'none', 'block'] }} pt={1}>
               <Breadcrumbs
                 productTitle={title}
                 collectionTitle={collectionTitle}
                 collectionPath={collectionPath}
                 separator="/"
               />
-            </Box> */}
+            </Box>
             
             <Box>
               <Text as="h1" mb={3} data-title-box>
@@ -170,10 +170,10 @@ function ProductPage({ data, pageContext, location }) {
               </Text>
 
 
-              <ProductVariantPrice
+              {/* <ProductVariantPrice
                 initialDisplayPrice={variants[0].price}
                 mb={3}
-              />
+              /> */}
               {shortDescription ? (
                 <DescriptionBox
                   source={shortDescription}
@@ -224,7 +224,7 @@ function ProductPage({ data, pageContext, location }) {
             </Flex> */}
 
             <Flex mb={4}>
-              <Box>
+              <Box mr={2}>
                 <ProductVariantAddToCart
                   amount={currentAmount}
                   cartUrl={cartUrl}
@@ -243,7 +243,7 @@ function ProductPage({ data, pageContext, location }) {
 
             <ProductVariantSku />
 
-            {/* {vendor ? (
+            {vendor ? (
               <Flex mb={4}>
                 <Box mr={2}>
                   <Text>{vendorLabel}</Text>
@@ -252,7 +252,7 @@ function ProductPage({ data, pageContext, location }) {
               </Flex>
             ) : (
               ''
-            )} */}
+            )}
 
             {productType ? (
               <Flex mb={4}>

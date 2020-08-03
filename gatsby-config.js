@@ -257,7 +257,7 @@ module.exports = {
                 link: '/birthstone-buyers-guide',
               },
               {
-                name: 'Sweet &amp; Petite',
+                name: 'Sweet & Petite',
                 type: 'link',
                 link: '/sweetandpetite',
               },
@@ -274,21 +274,32 @@ module.exports = {
             link: '',
             children: [
               {
-                name: 'A. Jaffe',
+                name: 'Rolex Watches - View Collection',
                 type: 'link',
-                handle: 'apparel',
-                link: '/ajaffe'
+                link: '/rolex'
               },
               {
-                name: 'Benchmark',
+                name: 'TAG Heuer',
                 type: 'link',
-                link: '/benchmark',
+                link: '/tag-heuer',
               },
               {
-                name: 'Facet Barcelona',
+                name: 'Tudor',
+                type: 'link',
+                link: '/tudor',
+              },
+              {
+                name: 'Victorinox',
+                type: 'link',
+                link: '/victorinox',
+              },
+              {
+                name: 'Pav & Broome Signature Collection',
                 type: 'link',
                 link: '/facet',
               },
+
+
             ],
           },
 
@@ -329,21 +340,36 @@ module.exports = {
             link: '',
             children: [
               {
-                name: 'A. Jaffe',
+                name: 'Gifts For Him',
                 type: 'link',
-                handle: 'apparel',
-                link: '/ajaffe'
+                link: '/gifts-for-him'
               },
               {
-                name: 'Benchmark',
+                name: 'Gifts For Her',
                 type: 'link',
-                link: '/benchmark',
+                link: '/gifts-for-her',
               },
               {
-                name: 'Facet Barcelona',
+                name: 'Jimmy Crystal',
                 type: 'link',
-                link: '/facet',
+                link: '/jimmy-crystal',
               },
+              {
+                name: 'M-Clip',
+                type: 'link',
+                link: '/m-clip',
+              },
+              {
+                name: 'Sweet & Petite',
+                type: 'link',
+                link: '/sweetandpetite',
+              },
+              {
+                name: 'William Henry',
+                type: 'link',
+                link: '/william-henry',
+              },
+
             ],
           },
 
@@ -357,20 +383,34 @@ module.exports = {
             link: '',
             children: [
               {
-                name: 'A. Jaffe',
+                name: 'Watch Repair',
                 type: 'link',
-                handle: 'apparel',
-                link: '/ajaffe'
+                link: '/watch-repair'
               },
               {
-                name: 'Benchmark',
+                name: 'Appraisals',
                 type: 'link',
-                link: '/benchmark',
+                link: '/appraisals',
               },
               {
-                name: 'Facet Barcelona',
+                name: 'Custom Design',
                 type: 'link',
-                link: '/facet',
+                link: '/custom-design',
+              },
+              {
+                name: 'Engraving',
+                type: 'link',
+                link: '/engraving',
+              },
+              {
+                name: 'Pear Restringing',
+                type: 'link',
+                link: '/pearl-restringing',
+              },
+              {
+                name: 'Jewelry Repair',
+                type: 'link',
+                link: '/jewelry-repair',
               },
             ],
           },
@@ -384,20 +424,24 @@ module.exports = {
             link: '',
             children: [
               {
-                name: 'A. Jaffe',
+                name: "Birthstone Buyer's Guide",
                 type: 'link',
-                handle: 'apparel',
-                link: '/ajaffe'
+                link: '/birthstone-buyers-guide'
               },
               {
-                name: 'Benchmark',
+                name: "Diamond Buyer's Guide",
                 type: 'link',
-                link: '/benchmark',
+                link: '/diamond-buyers-guide',
               },
               {
-                name: 'Facet Barcelona',
+                name: "Engagement Ring Buyer's Guide",
                 type: 'link',
-                link: '/facet',
+                link: '/engagement-ring-buyers-guide',
+              },
+              {
+                name: "Gemstone Buyer's Guide",
+                type: 'link',
+                link: '/gemstone-buyers-guide',
               },
             ],
           },
