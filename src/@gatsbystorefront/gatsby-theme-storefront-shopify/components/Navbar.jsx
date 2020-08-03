@@ -140,11 +140,11 @@ const Navbar = (props) => {
 
 
 
-{/* <div id="rolex-clock" style={{width:'150px', height:'70px', position:'absolute', right:'2vw', top:'10px'}}>
+<div id="rolex-clock" style={{width:'150px', height:'70px', position:'absolute', right:'2vw', top:'10px'}}>
 <a href="https://pavandbroome.com/rolex/" style={{position:'absolute', zIndex:'1', top:'0', left:'0', display:'block', height:'70px', width:'150px',  border:'0px solid red',}}>
 </a>
  <iframe id="rolex_retailer" src="https://static.rolex.com/retailers/clock/?colour=gold&amp;apiKey=d8039e0fd25ac17bfcc3a0957d0c06bd&amp;lang=en_us"  scrolling="no" frameBorder="no" style={{width:'150px', height:'70px', border:'0', margin:'0', padding:'0', overflow:'hidden', position:'absolute', top:'0', left:'0', scroll:'none', zIndex:'0'}}></iframe>
-</div> */}
+</div>
 
 
 
