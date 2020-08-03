@@ -4,7 +4,7 @@ import { navigate } from 'gatsby';
 
 import useShopifyFunctions from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/hooks/useShopifyFunctions';
 import { useCurrentVariantContext } from './CurrentVariantContext';
-import strings from '.@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/strings.json';
+import strings from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/strings.json';
 
 const ProductVariantAddToCart = ({ amount, cartUrl }) => {
   const { addItem } = useShopifyFunctions();
