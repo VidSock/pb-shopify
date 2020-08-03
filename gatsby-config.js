@@ -174,6 +174,43 @@ module.exports = {
                 type: 'link',
                 link: '/facet',
               },
+              {
+                name: 'Gabriel Fashion',
+                type: 'link',
+                link: '/gabriel',
+              },
+              {
+                name: 'AD Collection',
+                type: 'link',
+                link: '/adcollection',
+              },
+              {
+                name: 'Memoire',
+                type: 'link',
+                link: '/memoire',
+              },
+              {
+                name: 'Michael M',
+                type: 'link',
+                link: '/michaelm',
+              },
+              {
+                name: 'Mikimoto',
+                type: 'link',
+                link: '/mikimoto',
+              },
+              {
+                name: 'Parade',
+                type: 'link',
+                link: '/parade',
+              },
+              {
+                name: 'Pav & Broome Signature Collection',
+                type: 'link',
+                link: '/facet',
+              },
+
+
             ],
           },
 
@@ -185,21 +222,46 @@ module.exports = {
             link: '',
             children: [
               {
-                name: 'A. Jaffe',
+                name: 'Bracelets',
                 type: 'link',
-                handle: 'apparel',
-                link: '/ajaffe'
+                link: '/bracelets',
               },
               {
-                name: 'Benchmark',
+                name: 'Earrings',
                 type: 'link',
-                link: '/benchmark',
+                link: '/earrings',
               },
               {
-                name: 'Facet Barcelona',
+                name: 'Fashion Rings',
                 type: 'link',
-                link: '/facet',
+                link: '/fashion-rings',
               },
+              {
+                name: 'Mardi Gras Jewelry',
+                type: 'link',
+                link: '/mardigras',
+              },
+              {
+                name: 'Necklaces/Pendants',
+                type: 'link',
+                link: '/necklaces',
+              },
+              {
+                name: 'Pearl Jewelry',
+                type: 'link',
+                link: '/pearl-jewelery',
+              },
+              {
+                name: "Birthstone Buyer's Guide",
+                type: 'link',
+                link: '/birthstone-buyers-guide',
+              },
+              {
+                name: 'Sweet &amp; Petite',
+                type: 'link',
+                link: '/sweetandpetite',
+              },
+
             ],
           },
 
@@ -243,21 +305,17 @@ module.exports = {
             link: '',
             children: [
               {
-                name: 'A. Jaffe',
+                name: 'Engagement Rings',
                 type: 'link',
                 handle: 'apparel',
-                link: '/ajaffe'
+                link: '/engagement-rings'
               },
               {
-                name: 'Benchmark',
+                name: 'Wedding & Anniversary Bands',
                 type: 'link',
                 link: '/benchmark',
               },
-              {
-                name: 'Facet Barcelona',
-                type: 'link',
-                link: '/facet',
-              },
+     
             ],
           },
 

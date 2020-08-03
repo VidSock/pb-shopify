@@ -10,7 +10,8 @@ import "animate.css/animate.min.css"
 
 import styled from "styled-components"
 const CustomBox = styled.div`
-footer{background-color: #264C5A; color:#fff; padding:.1rem 0rem;  animation: fadeIn 4s;}
+footer{background: rgb(35,73,88);
+  background: linear-gradient(180deg, rgba(35,73,88,0.8138888888888889) 13%, rgba(38,76,90,1) 100%); color:#fff; padding:.1rem 0rem; margin-top:5vh;  animation: fadeIn 4s;}
 footer a{color:#fff;}
 .socialmenu{display: flex; flex-wrap: nowrap; list-style-type: none;}
 
@@ -20,8 +21,8 @@ footer a{color:#fff;}
 .social span{display: none;}
 .socialtext{font-size: 100%; padding:0 0 0 0; margin:0 0 0 0; }
 
-// .company-menu li, .flex-item h4{text-align:left;}
-
+.company-menu{margin: 0; padding:0; list-style-type:none;}
+.company-menu li{margin:1rem 0; padding:0;}
 
 .flex-container {
   display: flex;
@@ -48,10 +49,13 @@ footer a{color:#fff;}
   flex-flow: column wrap;
 }
 .flex-item{width:100vw;}
+.flex-item iframe{height:350px;}
+.socialcolumn{padding:4rem 0;}
 }
 
 
 
+}
 `
 
 
@@ -68,6 +72,18 @@ const Footer = class extends React.Component {
 
 
       <footer className="footer">
+
+
+      <form style={{background:'#333', padding:'0 0 5px 0'}}>
+      <p style={{width:'100%', textAlign:'center', fontSize:'80%', padding:'0', margin:'0 0 -10x 0'}}>Get latest news &amp; offers. Join our email list:</p>
+        <div style={{height:'', padding:'0', display:'flex', justifyContent:'center'}}>
+<h3 style={{padding:'0 1rem 0 0'}}>Let’s Engage!</h3>
+<div><input type="text" placeholder="your@email.com" style={{border:'1px solid #222', borderRadius:'3px', background:'#666', color:'#fff', padding:'2px 5px', outline:'none'}} /><input type="submit" value="Sign Up" style={{marginLeft:'1rem'}} /></div>
+        </div></form>
+
+
+
+
         <div className="content">
           
 
@@ -78,8 +94,8 @@ const Footer = class extends React.Component {
  </div>
 
  <ul className="flex-container">
-  <li className="flex-item" style={{textAlign:'left', paddingLeft:'2vw'}}>
-    <h4>Pav &amp; Broome Fine Jewelry</h4>
+  <li className="flex-item" style={{textAlign:'left', padding:'2rem', paddingTop:'0'}}>
+    <h4 style={{borderBottom:'0px solid #222'}}>Pav &amp; Broome Fine Jewelry</h4>
 <ul className="company-menu">
 <li><a href="https://pavandbroome.com/spotlight/news/">News &amp; Updates</a></li>
 <li><a href="https://pavandbroome.com/about-us/">About Us</a></li>
@@ -108,14 +124,12 @@ const Footer = class extends React.Component {
 Phone: <a className="call-button btn" href="tel:2288633699">(228) 863-3699</a>
 
 
-{/* <h4>Let’s Engage</h4>
 
-Get latest news &amp; offers. Join our email list. */}
 </li>
 
 
 
-  <li className="flex-item">
+  <li className="flex-item socialcolumn">
     
   <p style={{textAlign:'center'}}> Follow us on your favorite social platform</p>
     <ul className="socialmenu" style={{display:'flex', textAlign:'center', justifyContent:'center', margin:'0 0'}}>
