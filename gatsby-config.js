@@ -3,6 +3,7 @@ const flattenMenu = require('@gatsbystorefront/gatsby-theme-storefront-shopify/s
 
 module.exports = {
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: '@gatsbystorefront/gatsby-theme-storefront-shopify',
       options: {
@@ -13,8 +14,8 @@ module.exports = {
         enableWebp: true,
         imageQuality: '95',
         manifest: {
-          name: 'Gatsby Storefront Demo Store',
-          short_name: 'Gatsby Storefront',
+          name: 'Pav & Broome',
+          short_name: 'Pav & Broome',
           start_url: '/',
           background_color: '#fff',
           theme_color: '#333',
@@ -26,13 +27,13 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    siteUrl: 'https://demo.gatsbystorefront.com',
+    siteUrl: 'https://pavandbroome.netlify.app',
     gatsbyStorefrontConfig: {
-      storeName: 'Gatsby Storefront',
-      storeDescription: 'Demo store description',
+      storeName: 'Pav & Broome Fine Jewlery',
+      storeDescription: 'Where the Coast gets engaged',
       email: 'info@gatsbystorefront.com',
-      company: 'Gatsby Storefront Inc.',
-      location: 'New York, NY',
+      company: 'Pav & Broome',
+      location: 'Gulfport, MS',
       address: '1 Centre St.',
       phone: '+1 (800) 123-1234',
       workingDays: 'Mon - Fri',
@@ -50,10 +51,10 @@ module.exports = {
         'Facebook',
         'Pinterest',
         'Twitter',
-        'Tumblr',
-        'Whatsapp',
-        'Line',
-        'Viber',
+        // 'Tumblr',
+        // 'Whatsapp',
+        // 'Line',
+        // 'Viber',
       ],
       googleAnalyticsId: 'UA-141525658-5',
       //

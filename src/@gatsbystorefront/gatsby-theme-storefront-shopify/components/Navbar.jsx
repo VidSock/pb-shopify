@@ -130,7 +130,7 @@ const Navbar = (props) => {
             <Text
               as={GatsbyLink}
               aria-label={ariaShoppingCartLabel}
-              to="/jewelry/cart"
+              to="/cart"
               fontSize={4}
               style={{ textDecoration: 'none' }}
               ml="auto"
