@@ -12,7 +12,7 @@ const Sidebar = styled(Box)`
   overflow: auto;
   z-index: 99;
   top: 0;
-  left: 0;
+  right: 0;
   height: 100%;
 `;
 

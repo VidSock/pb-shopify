@@ -132,17 +132,13 @@ Phone: <a className="call-button btn" href="tel:2288633699">(228) 863-3699</a>
   <li className="flex-item socialcolumn">
     
   <p style={{textAlign:'center'}}> Follow us on your favorite social platform</p>
-    <ul className="socialmenu" style={{display:'flex', textAlign:'center', justifyContent:'center', margin:'0 0'}}>
-<li><a className="social"  href="https://www.facebook.com/pavandbroome" alt="Pav &amp;Broome on Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
-
-<li><a className="social" href="https://g.page/pavandbroome?gm" alt="Pav &amp;Broome on Google" title="Google"><FaGoogle /><span>Google</span></a></li>
-
-<li><a className="social" href="https://twitter.com/PavAndBroome" alt="Pav &amp;Broome on Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
-
-<li style={{display: '',}}><a className="social" href="https://www.pinterest.com/twilightscapes/" alt="Pav &amp;Broome on Pinterest" title="Pinterest"><FaPinterestSquare /><span>Pinterest</span></a></li>
-
-<li><a className="social" href="https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ" alt="Pav &amp;Broome on YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
-</ul>
+  <div class="social-links">
+              <a href="https://www.facebook.com/pavandbroome" title="Pav &amp; Broome on Facebook"  target="blank"><i class="fa fa-facebook-f"></i></a>
+              <a href="https://g.page/pavandbroome?gm" title="Pav &amp; Broome on Google"  target="blank"><i class="fa fa-google-plus"></i></a>
+              <a href="https://twitter.com/PavAndBroome" title="Pav &amp; Broome on Twitter"  target="blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.youtube.com/user/pavandbroome" title="Pav &amp; Broome on YouTube"  target="blank"><i class="fa fa-youtube"></i></a>
+              <a href="https://www.pinterest.com/source/pavandbroome.com" title="Pav &amp; Broome on Pinterest" target="blank"><i class="fa fa-pinterest-p"></i></a>
+             </div>
 
 <p style={{textAlign:'center', padding:'2rem 1rem 0 1rem'}}>If you had a great experience, please take a few minutes to tell others, and give us a review.</p>
 <ul className="socialmenu" style={{display:'flex', textAlign:'center', justifyContent:'center', margin:'0 0', padding:'0'}}>

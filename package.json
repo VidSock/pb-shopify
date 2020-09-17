@@ -15,6 +15,7 @@
     "dotenv": "^8.2.0",
     "gatsby": "^2.13.38",
     "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-source-shopify-storefront": "^1.0.0",
     "react": "^16.8.6",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.8.6",
