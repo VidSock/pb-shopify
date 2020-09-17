@@ -160,8 +160,8 @@ module.exports = {
             children: [
               {
                 name: 'A. Jaffe',
-                type: 'link',
-                handle: 'apparel',
+                // type: 'link',
+                // handle: '/parade',
                 link: '/ajaffe'
               },
               {
@@ -201,8 +201,8 @@ module.exports = {
               },
               {
                 name: 'Parade',
-                type: 'link',
-                link: '/parade',
+                type: 'external',
+                link: 'parade/',
               },
               {
                 name: 'Pav & Broome Signature Collection',
