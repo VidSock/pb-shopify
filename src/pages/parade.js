@@ -16,7 +16,7 @@ const Test = () => (
     }}
   >
     <div>
-      <iframe src="https://iframe.paradedesign.com/" title="dummy" style={{width:'98.5vw',height:'100vh'}}></iframe>
+      <iframe src="https://iframe.paradedesign.com/" title="dummy" style={{width:'100vw',height:'100vh'}}></iframe>
 
   </div>
 
