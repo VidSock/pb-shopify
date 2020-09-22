@@ -16,15 +16,16 @@ const { searchLabel, searchInputLabel } = strings;
 const Sidebar = styled(Box)`
   position: fixed;
   overflow: auto;
-  z-index: 2;
+  z-index: 1;
   top: 0;
   right: 0;
   height: 100%;
+  padding-top:100px;
 `;
 
 const DisabledArea = styled(Box)`
   position: fixed;
-  z-index: 1;
+  z-index: 0;
   top: 0;
   left: 0;
   right: 0;
@@ -81,10 +82,10 @@ const Search = () => {
   return (
     <React.Fragment>
       <SearchIcon
-        width="24px"
-        height="24px"
+        width="34px"
+        height="34px"
         onClick={toggleSidebar}
-        sx={{ cursor: 'pointer' }}
+        sx={{ cursor: 'pointer', }}
       />
       {showSidebar ? (
         <React.Fragment>
@@ -100,9 +101,9 @@ const Search = () => {
                 <Box>{searchLabel}</Box>
                 <Box ml="auto">
                   <Close
-                    width="20px"
-                    height="20px"
-                    color="primary"
+                    width="30px"
+                    height="30px"
+                    color=""
                     sx={{ cursor: 'pointer' }}
                   />
                 </Box>

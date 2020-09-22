@@ -31,7 +31,7 @@ const CustomBox = styled.div`
 #sidebarMenu {
     height: 100%;
     position: fixed;
-    z-index:2;
+    z-index:3;
     right: 0;
     bottom:0;
     top:0;
@@ -41,7 +41,7 @@ const CustomBox = styled.div`
     transition: transform 250ms ease-in-out;
     // background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
       // background: rgba(196,22,37,.9);
-      background: rgba(0,0,0,.9);
+      background: rgba(20,20,20,.99);
       border-left:1px solid rgba(255, 255, 255, 0.10);
 }
 .sidebarMenuInner{
@@ -55,7 +55,7 @@ const CustomBox = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     padding: 20px;
-    cursor: pointer;
+    // cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0.10);
 }
 .sidebarMenuInner li span{
@@ -83,7 +83,7 @@ input[type=checkbox] {
     box-sizing: border-box;
     cursor: pointer;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     height: 100%;
     width: 100%;
     top: 22px;
@@ -91,14 +91,23 @@ input[type=checkbox] {
     height: 42px;
     width: 42px;
 }
+
+
 .spinner {
     transition: all 0.3s;
     box-sizing: border-box;
     position: absolute;
     height: 5px;
     width: 100%;
-    background-color: #fff;
+    background-color: #333;
 }
+
+input[type="checkbox"]:checked ~ #menupop .spinner{
+  background-color: #fff !important;
+}
+
+
+
 .horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
@@ -144,6 +153,13 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
 .header{background:transparent !important; width:auto;}
 .modal-btn{box-shadow:none;}
 .modal-btn:hover{background:#222;}
+
+@media (max-width: 48rem) {
+  #rolex-clock-mobile{display:block !important;}
+}
+@media (min-width: 48rem) {
+  #rolex-clock-desk{display:block !important;}
+}
 `
 
 
@@ -210,7 +226,7 @@ const Navbar = (props) => {
   return (
     <CustomBox> 
     <Nav show={hideNavbarOnScroll}>
-      <Box py={3} width={1} as="nav" bg="white">
+      <Box py={3} width={1} as="nav" style={{background: 'linear-gradient(90deg, rgba(202,211,214,1) 0%, rgba(255,255,255,1) 10%, rgba(202,211,214,1) 100%)'}}>
 
         {/* <div id="rolex-clock" style={{width:'150px', height:'70px', position:'absolute', left:'2vw', top:'10px'}}>
 <a href="https://pavandbroome.com/rolex/" style={{position:'absolute', zIndex:'1', top:'0', left:'0', display:'block', height:'70px', width:'150px',  border:'0px solid red',}}>
@@ -248,10 +264,11 @@ const Navbar = (props) => {
                 </Text>
               </>
             )} */}
+            
           <div style={{display:'inline-block'}}><img src={logo} style={{maxHeight:'60px', marginLeft:'3vw'}} /></div>
 
 
-          <div id="rolex-clock" style={{width:'150px', height:'70px', position:'absolute', top:'10px', right:'8vw' }}>
+          <div id="rolex-clock-desk" style={{width:'150px', height:'70px', position:'absolute', top:'10px', right:'18vw', display:'none' }}>
 <a href="https://pavandbroome.com/rolex/" style={{position:'absolute', zIndex:'1', top:'0', left:'0', display:'block', height:'70px', width:'150px',  border:'0px solid red',}}>
 </a>
  <iframe id="rolex_retailer" src="https://static.rolex.com/retailers/clock/?colour=gold&amp;apiKey=d8039e0fd25ac17bfcc3a0957d0c06bd&amp;lang=en_us"  scrolling="no" frameBorder="no" style={{width:'150px', height:'70px', border:'0', margin:'0', padding:'0', overflow:'hidden', position:'absolute', top:'0', left:'0', scroll:'none', zIndex:'0'}}></iframe>
@@ -274,16 +291,20 @@ const Navbar = (props) => {
 
           </Box> */}
           
-            
+          <div style={{position:'absolute', top:'20px', right:'100px'}}><Search width="25px" height="25px" color="secondary" /></div>
+          
 </Box>
     </Nav>
           <input type="checkbox" className="openSidebarMenu" id="openSidebarMenu" />
-  <label htmlFor="openSidebarMenu" className="sidebarIconToggle">
-  {/* <span className="txtshadow" style={{textShadow:'2px', color:'#fff',}}>MENU</span> */}
+  <label htmlFor="openSidebarMenu" className="sidebarIconToggle" id="menupop">
+ 
     <div className="spinner diagonal part-1"></div>
     <div className="spinner horizontal"></div>
     <div className="spinner diagonal part-2"></div>
+    {/* <div className="txtshadow" style={{textShadow:'2px', color:'#ff0000', margin:'28px 0 0 -4px'}}>MENU</div> */}
   </label>
+
+
 
   
 
@@ -292,8 +313,23 @@ const Navbar = (props) => {
    
 
     <ul className="sidebarMenuInner">
-    <Search width="25px" height="25px" color="primary" />
+   {/* <li><Search width="25px" height="25px" color="secondary" /></li>  */}
       {/* <li>Todd Lambert <span>Web Developer</span></li> */}
+
+      {/* <li>
+      <Text
+              as={GatsbyLink}
+              aria-label={ariaShoppingCartLabel}
+              to="/cart"
+              fontSize={3}
+              style={{ textDecoration: 'none', color:'#fff' }}
+              ml="auto"
+            >
+              
+              <ShoppingCart width="25px" height="25px" /> Cart
+             
+            </Text>
+      </li> */}
 
       <li>
               <Link className="navbar-item txtshadow" to="/simong/">
@@ -312,7 +348,7 @@ const Navbar = (props) => {
 
     </ul>
 
-    <div id="rolex-clock" style={{width:'150px', height:'70px', position:'absolute', bottom:'5vh', left:'20%' }}>
+    <div id="rolex-clock-mobile" style={{width:'150px', height:'70px', position:'absolute', bottom:'5vh', left:'20%', display:'none' }}>
 <a href="https://pavandbroome.com/rolex/" style={{position:'absolute', zIndex:'1', top:'0', left:'0', display:'block', height:'70px', width:'150px',  border:'0px solid red',}}>
 </a>
  <iframe id="rolex_retailer" src="https://static.rolex.com/retailers/clock/?colour=gold&amp;apiKey=d8039e0fd25ac17bfcc3a0957d0c06bd&amp;lang=en_us"  scrolling="no" frameBorder="no" style={{width:'150px', height:'70px', border:'0', margin:'0', padding:'0', overflow:'hidden', position:'absolute', top:'0', left:'0', scroll:'none', zIndex:'0'}}></iframe>
@@ -326,16 +362,7 @@ const Navbar = (props) => {
   
 
 
-            {/* <Text
-              as={GatsbyLink}
-              aria-label={ariaShoppingCartLabel}
-              to="/cart"
-              fontSize={4}
-              style={{ textDecoration: 'none' }}
-              ml="auto"
-            >
-              <ShoppingCart width="25px" height="25px" color="primary" />
-            </Text> */}
+            
 
 
       
