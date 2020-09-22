@@ -5,6 +5,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-source-plugin-simong`,
+      options: {
+        spaceId: "123",
+        preview: true,
+        cacheResponse: false,
+      },
+    },
+    {
       resolve: '@gatsbystorefront/gatsby-theme-storefront-shopify',
       options: {
         shopName: process.env.GATSBY_SHOP_NAME,
@@ -158,56 +166,61 @@ module.exports = {
             handle: '',
             link: '',
             children: [
-              {
-                name: 'A. Jaffe',
-                // type: 'link',
-                // handle: '/parade',
-                link: '/ajaffe'
-              },
-              {
-                name: 'Benchmark',
-                type: 'link',
-                link: '/benchmark',
-              },
-              {
-                name: 'Facet Barcelona',
-                type: 'link',
-                link: '/facet',
-              },
-              {
-                name: 'Gabriel Fashion',
-                type: 'link',
-                link: '/gabriel',
-              },
-              {
-                name: 'AD Collection',
-                type: 'link',
-                link: '/adcollection',
-              },
-              {
-                name: 'Memoire',
-                type: 'link',
-                link: '/memoire',
-              },
-              {
-                name: 'Michael M',
-                type: 'link',
-                link: '/michaelm',
-              },
-              {
-                name: 'Mikimoto',
-                type: 'link',
-                link: '/mikimoto',
-              },
+              // {
+              //   name: 'A. Jaffe',
+              //   // type: 'link',
+              //   // handle: '/parade',
+              //   link: '/ajaffe'
+              // },
+              // {
+              //   name: 'Benchmark',
+              //   type: 'link',
+              //   link: '/benchmark',
+              // },
+              // {
+              //   name: 'Facet Barcelona',
+              //   type: 'link',
+              //   link: '/facet',
+              // },
+              // {
+              //   name: 'Gabriel Fashion',
+              //   type: 'link',
+              //   link: '/gabriel',
+              // },
+              // {
+              //   name: 'AD Collection',
+              //   type: 'link',
+              //   link: '/adcollection',
+              // },
+              // {
+              //   name: 'Memoire',
+              //   type: 'link',
+              //   link: '/memoire',
+              // },
+              // {
+              //   name: 'Michael M',
+              //   type: 'link',
+              //   link: '/michaelm',
+              // },
+              // {
+              //   name: 'Mikimoto',
+              //   type: 'link',
+              //   link: '/mikimoto',
+              // },
               {
                 name: 'Parade',
                 type: 'external',
                 link: 'parade/',
               },
+              // {
+              //   name: 'Pav & Broome Signature Collection',
+              //   type: 'external',
+              //   link: 'signatute-collection/',
+              // },
               {
-                name: 'Pav & Broome Signature Collection',
-                type: 'link',
-                link: '/facet',
+                name: 'Simon G',
+                type: 'external',
+                link: 'simong/',
               },
 
 
