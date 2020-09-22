@@ -36,7 +36,7 @@ export default ({ data }) => (
             fluid={post.remoteImage.childImageSharp.fluid}
             alt={post.name}
             style={{
-              maxHeight: 500,
+              maxHeight: 600,
             }}
           />
 

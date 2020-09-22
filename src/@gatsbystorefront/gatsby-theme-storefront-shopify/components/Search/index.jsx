@@ -16,7 +16,7 @@ const { searchLabel, searchInputLabel } = strings;
 const Sidebar = styled(Box)`
   position: fixed;
   overflow: auto;
-  z-index: 99;
+  z-index: 2;
   top: 0;
   right: 0;
   height: 100%;
@@ -24,7 +24,7 @@ const Sidebar = styled(Box)`
 
 const DisabledArea = styled(Box)`
   position: fixed;
-  z-index: 98;
+  z-index: 1;
   top: 0;
   left: 0;
   right: 0;
