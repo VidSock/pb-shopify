@@ -266,7 +266,7 @@ const Navbar = (props) => {
               </>
             )} */}
             
-          <div style={{display:'inline-block'}}><img src={logo} style={{maxHeight:'60px', marginLeft:'3vw'}} /></div>
+          <div style={{display:'inline-block', zIndex:'5', position:'relative' }}><img src={logo} style={{maxHeight:'60px', marginLeft:'3vw'}} /></div>
 
 
           <div id="rolex-clock-desk" style={{width:'150px', height:'70px', position:'absolute', top:'10px', right:'18vw', display:'none' }}>

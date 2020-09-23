@@ -44,7 +44,7 @@ const DisabledArea = styled(Box)`
 
    transition: all 0.15s;
 
-  animation:fade 1s forwards;
+  animation:fade .8s forwards;
   overflow-y:auto;
   background: rgba(0,0,0,0.50);
   backdrop-filter: blur(10px);
@@ -166,6 +166,7 @@ const Search = () => {
                   value={query}
                   onChange={search}
                   placeholder={searchInputLabel}
+                  style={{fontSize:'80%'}}
                 />
               </Box>
               <Box>
