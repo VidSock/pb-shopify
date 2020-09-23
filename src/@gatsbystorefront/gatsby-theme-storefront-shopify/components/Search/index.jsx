@@ -581,7 +581,7 @@ const Search = () => {
 
 
 </section>
-\
+
 
     </TabPanel>
     {/* TIMEPIECES */}

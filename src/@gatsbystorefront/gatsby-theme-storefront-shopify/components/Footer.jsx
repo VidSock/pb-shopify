@@ -91,12 +91,12 @@ const Footer = class extends React.Component {
 
 
 
- <div style={{display:'flex'}}>
+ {/* <div style={{display:'flex'}}>
 
- </div>
+ </div> */}
 
  <ul className="flex-container">
-  <li className="flex-item" style={{textAlign:'left', padding:'2rem', paddingTop:'0',}}>
+  <li className="flex-item" style={{textAlign:'left', padding:'2rem', paddingTop:'0', width:'28%'}}>
     <h4 style={{borderBottom:'0px solid #222'}}>Pav &amp; Broome Fine Jewelry</h4>
 <ul className="company-menu">
 <li><a href="https://pavandbroome.com/spotlight/news/"><GiCutDiamond style={{fontSize:'130%'}} /> News &amp; Updates</a></li>
@@ -109,15 +109,8 @@ const Footer = class extends React.Component {
 
 </li>
 
-
-
-
-
-  <li className="flex-item" style={{padding:'0 2rem'}}>
+  <li className="flex-item" style={{padding:'0 2rem' }}>
  
-    
- 
-
   <h4 style={{borderBottom:'0px solid #222'}}>Our Location</h4>
 
 <iframe title="location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.1870005935!2d-89.09477208492169!3d30.374047409881573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889c17d83754533d%3A0xbc27b3c5fcecdf42!2sPav%20%26%20Broome%20Fine%20Jewelry-Official%20Rolex%20Jeweler!5e0!3m2!1sen!2sus!4v1596421047153!5m2!1sen!2sus" width="100%" height="200" frameborder="0" ariaHidden="false"></iframe>
@@ -125,10 +118,7 @@ const Footer = class extends React.Component {
 1912 25th Ave, Gulfport, MS 39501<br />
 Phone: <a className="call-button btn" href="tel:2288633699">(228) 863-3699</a>
 
-
-
 </li>
-
 
 
   <li className="flex-item socialcolumn" style={{padding:'10px'}}>
