@@ -32,7 +32,7 @@ border-radius:12px;
 }
 .presearch div{max-height:200px}
 
-
+link{color:#ff0000;}
 
 
 
@@ -518,10 +518,10 @@ const Search = () => {
           }}>
     <h4>Browse<br /> All Earrings</h4>
     <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/earrings-jewelry-search-trans.png" width="100%" alt="earrings-jewelry-search-trans" />
-    <Link>Vintage</Link>
-    <Link>Contemporary</Link>
-    <Link>Stud</Link>
-    <Link>Hoop</Link>
+    <Link to="/">Vintage</Link>
+    <Link to="/">Contemporary</Link>
+    <Link to="/">Stud</Link>
+    <Link to="/">Hoop</Link>
           </li>
           <li style={{
             display: `flex`,
@@ -534,9 +534,9 @@ const Search = () => {
           }}>
     <h4>Browse<br /> All Rings</h4> 
     <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/ring-jewelry-search-2.png" width="100%" height="auto" alt="rings-jewelry-search-trans" style={{margin:'2vh auto', maxWidth:'70%'}} />
-    <Link>Vintage</Link>
-    <Link>Contemporary</Link>
-    <Link>Stackable</Link>
+    <Link to="/">Vintage</Link>
+    <Link to="/">Contemporary</Link>
+    <Link to="/">Stackable</Link>
 
     
           </li>
@@ -552,9 +552,9 @@ const Search = () => {
     <h4>Browse<br /> All Bracelets</h4>    
 
     <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/bracelet-pic-jewelry-search-trans.png " width="100%" height="auto" alt="bracelet-jewelry-search-trans" style={{margin:'0vh auto', maxWidth:'90%'}} />
-    <Link>Tennis</Link>
-    <Link>Bangle</Link>
-    <Link>Cuff</Link>
+    <Link to="/">Tennis</Link>
+    <Link to="/">Bangle</Link>
+    <Link to="/">Cuff</Link>
 
           </li>
           <li style={{
@@ -569,11 +569,11 @@ const Search = () => {
     <h4>Browse<br /> All Necklaces</h4>   
 
     <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/necklace-pic-jewelry-search-trans.png" width="100%" height="auto" alt="necklace-jewelry-search-trans" style={{margin:'0vh auto', maxWidth:'90%'}} />
-    <Link>Vintage</Link>
-    <Link>Contemporary</Link>
-    <Link>Layered</Link>
-    <Link>Bar</Link>
-    <Link>Cross</Link>
+    <Link to="/">Vintage</Link>
+    <Link to="/">Contemporary</Link>
+    <Link to="/">Layered</Link>
+    <Link to="/">Bar</Link>
+    <Link to="/">Cross</Link>
     
     
           </li>
@@ -602,7 +602,7 @@ const Search = () => {
 
             <div style={{width:'60vw', display:'flex', flexDirection: `column`, textAlign:'center', justifyContent: "space-around", }}>
             <h3>The Pav &amp; Broome Signature Collection</h3>
-            <Link>View Pav &amp; Broome Watches</Link>
+            <Link to="/">View Pav &amp; Broome Watches</Link>
             </div>
 
             <img src="https://pavandbroome.com/admin/wp-content/uploads/2018/08/a4152ws-wht-2-300x300.jpg" width="100%" alt="earrings-jewelry-search-trans" style={{margin:'0vh auto', width:'auto', maxHeight:'200px'}} />
@@ -651,7 +651,7 @@ const Search = () => {
             <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/rolex-fine-watches-pic-jewelry-search-rolex-watch-collection.png" width="100%" alt="earrings-jewelry-search-trans" style={{margin:'3vh auto', maxWidth:'70%'}} />
     <h4>The Coast's<br /> Rolex Dealer</h4>
     
-    <Link>View Rolex Watches</Link>
+    <Link to="/">View Rolex Watches</Link>
           </li>
           <li style={{
             display: `flex`,
@@ -665,7 +665,7 @@ const Search = () => {
             <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/tudor-fine-watches-pic-jewelry-search-tudor-watch-collection.png" width="100%" height="auto" alt="rings-jewelry-search-trans" style={{margin:'2vh auto', maxWidth:'80%'}} />
             <h4>The Coast's<br /> Tudor Dealer</h4>
     
-    <Link>View Tudor Watches</Link>
+    <Link to="/">View Tudor Watches</Link>
     
           </li>
           <li style={{
@@ -681,7 +681,7 @@ const Search = () => {
             <h4>The Coast's<br /> Tag Heuer Dealer</h4>  
 
     
-    <Link>View Tag Heuer Watches</Link>
+    <Link to="/">View Tag Heuer Watches</Link>
 
 
           </li>
@@ -698,7 +698,7 @@ const Search = () => {
             <h4>The Coast's<br /> Victorinox Dealer</h4>  
 
     
-    <Link>View Victorinox Watches</Link>
+    <Link to="/">View Victorinox Watches</Link>
     
     
           </li>
