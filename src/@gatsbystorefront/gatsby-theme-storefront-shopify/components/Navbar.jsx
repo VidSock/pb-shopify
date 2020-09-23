@@ -278,18 +278,12 @@ const Navbar = (props) => {
           </Text>
 
 
-          {/* <Box ml="auto" style={{marginRight:'0'}} >
+          <Box ml="auto" style={{marginRight:'0'}} >
               
             </Box>
             
-            <Box style={{marginRight:'10vw'}}>
+            {/* <Box style={{marginRight:'10vw'}}>
             <Menu menu={menu} />
-
-
-           
-
-
-
           </Box> */}
           
           <div style={{position:'absolute', top:'20px', right:'100px'}}><Search width="25px" height="25px" color="secondary" /></div>

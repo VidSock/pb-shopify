@@ -14,7 +14,7 @@ export default ({ data }) => (
     <section
       style={{
         display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(30%, 1fr) )`,
+        gridTemplateColumns: `repeat( auto-fit, minmax(300px, 1fr) )`,
         gridGap: 16,
         justifyContent: "space-between",
       }}
