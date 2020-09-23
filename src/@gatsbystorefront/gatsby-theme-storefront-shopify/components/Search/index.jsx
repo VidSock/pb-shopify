@@ -216,7 +216,7 @@ const Search = () => {
                   />
                 </Box>
               </Flex> */}
-              <Box style={{fontSize:'20px', margin:'20px 0 0 0'}}>{searchLabel}</Box>
+              <Box style={{fontSize:'20px', margin:'20px 0 0 20px'}}>{searchLabel}</Box>
               <Box>
                 <Input
                   id="search"
@@ -224,7 +224,7 @@ const Search = () => {
                   value={query}
                   onChange={search}
                   placeholder={searchInputLabel}
-                  style={{fontSize:'80%'}}
+                  style={{fontSize:'80%', width:'90%', margin:'0 auto'}}
                 />
               </Box>
             
@@ -246,22 +246,11 @@ const Search = () => {
           
           <DisabledArea>
 
-
-
-
-
-
-
 <div style={{display:'block', width:'100vw', height:'100vh', border:'0px solid red', position:'absolute', zIndex:'1', borderRadius:'12px', position:'absolute'}}></div>
 
 
             <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', marginTop:'14vh', height:'75vh', width:'75vw', position:'absolute', zIndex:'2', top:'0' }}>
               <div style={{background:'#fff', padding:'0', border:'0px solid red', boxShadow:'0 2px 3px 3px #999', borderRadius:'12px', position:'absolute', top:'0' }}>
-
-
-
-
-
 
 
 
@@ -487,16 +476,31 @@ const Search = () => {
     </section>
     </TabPanel>
 
+
     {/* JEWELRY */}
     <TabPanel style={{padding:'1rem'}}>
-      <h2>Jewelry</h2>
+    <h2>Jewelry</h2>
+    <section className="presearch"
+      style={{
+        display: `grid`,
+        gridTemplateColumns: `repeat( auto-fit, minmax(200px, 1fr) )`,
+        gridGap: 20,
+        justifyContent: "space-around",
+        width:'65vw',
+        height:'auto',
+        maxHeight:'60vh',
+        overflow:'scroll',
+        
+      }}
+    >
+      
 <ul id="jewerlrySelector" style={{
         display: `grid`,
         gridTemplateColumns: `repeat( auto-fit, minmax(140px, 1fr) )`,
         gridGap: 10,
         justifyContent: "space-between",
         width:'100%',
-        height:'70vh',
+        height:'40vh',
         overflow:'scroll',
         margin:'0',
         padding:'0',
@@ -576,7 +580,7 @@ const Search = () => {
 </ul>
 
 
-
+</section>
 
 
 

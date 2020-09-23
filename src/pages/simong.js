@@ -2,9 +2,14 @@ import React from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from '../@gatsbystorefront/gatsby-theme-storefront-shopify/components/Layout'
+import SlideShow from "../components/slideshow"
 
 export default ({ data }) => (
     <Layout>
+
+{/* <SlideShow /> */}
+
+
   <div
     style={{
       padding: 32,
