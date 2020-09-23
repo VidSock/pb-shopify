@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { FaFacebookSquare, FaTwitterSquare, FaGoogle, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
+import { FaFacebookSquare, FaTwitterSquare, FaGoogle, FaPinterestSquare,FaInstagramSquare, FaYoutubeSquare } from 'react-icons/fa'
+
+import { GiCutDiamond } from 'react-icons/gi'
 import "animate.css/animate.min.css"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import Image from '../../../Components/Image'
@@ -94,14 +96,14 @@ const Footer = class extends React.Component {
  </div>
 
  <ul className="flex-container">
-  <li className="flex-item" style={{textAlign:'left', padding:'2rem', paddingTop:'0'}}>
+  <li className="flex-item" style={{textAlign:'left', padding:'2rem', paddingTop:'0',}}>
     <h4 style={{borderBottom:'0px solid #222'}}>Pav &amp; Broome Fine Jewelry</h4>
 <ul className="company-menu">
-<li><a href="https://pavandbroome.com/spotlight/news/">News &amp; Updates</a></li>
-<li><a href="https://pavandbroome.com/about-us/">About Us</a></li>
-<li><a href="https://pavandbroome.com/careers/">Careers</a></li>
-<li><a href="https://pavandbroome.com/testimonials-2/">Testimonials</a></li>
-<li><a href="https://pavandbroome.com/contact-us/">Contact Us</a></li>
+<li><a href="https://pavandbroome.com/spotlight/news/"><GiCutDiamond style={{fontSize:'130%'}} /> News &amp; Updates</a></li>
+<li><a href="https://pavandbroome.com/about-us/"><GiCutDiamond style={{fontSize:'130%'}} /> About Us</a></li>
+<li><a href="https://pavandbroome.com/careers/"><GiCutDiamond style={{fontSize:'130%'}} /> Careers</a></li>
+<li><a href="https://pavandbroome.com/testimonials-2/"><GiCutDiamond style={{fontSize:'130%'}} /> Testimonials</a></li>
+<li><a href="https://pavandbroome.com/contact-us/"><GiCutDiamond style={{fontSize:'130%'}} /> Contact Us</a></li>
 {/* <li><a href="https://pavandbroome.com/site-map">Site Map</a></li> */}
 </ul>
 
@@ -116,7 +118,7 @@ const Footer = class extends React.Component {
     
  
 
-
+  <h4 style={{borderBottom:'0px solid #222'}}>Our Location</h4>
 
 <iframe title="location map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.1870005935!2d-89.09477208492169!3d30.374047409881573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889c17d83754533d%3A0xbc27b3c5fcecdf42!2sPav%20%26%20Broome%20Fine%20Jewelry-Official%20Rolex%20Jeweler!5e0!3m2!1sen!2sus!4v1596421047153!5m2!1sen!2sus" width="100%" height="200" frameborder="0" ariaHidden="false"></iframe>
 <br />
@@ -129,18 +131,21 @@ Phone: <a className="call-button btn" href="tel:2288633699">(228) 863-3699</a>
 
 
 
-  <li className="flex-item socialcolumn">
+  <li className="flex-item socialcolumn" style={{padding:'10px'}}>
     
   <p style={{textAlign:'center'}}> Follow us on your favorite social platform</p>
-  <div class="social-links">
-              <a href="https://www.facebook.com/pavandbroome" title="Pav &amp; Broome on Facebook"  target="blank"><i class="fa fa-facebook-f"></i></a>
-              <a href="https://g.page/pavandbroome?gm" title="Pav &amp; Broome on Google"  target="blank"><i class="fa fa-google-plus"></i></a>
-              <a href="https://twitter.com/PavAndBroome" title="Pav &amp; Broome on Twitter"  target="blank"><i class="fa fa-twitter"></i></a>
-              <a href="https://www.youtube.com/user/pavandbroome" title="Pav &amp; Broome on YouTube"  target="blank"><i class="fa fa-youtube"></i></a>
-              <a href="https://www.pinterest.com/source/pavandbroome.com" title="Pav &amp; Broome on Pinterest" target="blank"><i class="fa fa-pinterest-p"></i></a>
-             </div>
-
-<p style={{textAlign:'center', padding:'2rem 1rem 0 1rem'}}>If you had a great experience, please take a few minutes to tell others, and give us a review.</p>
+  <ul className="socialmenu" style={{display:'flex', textAlign:'center', flexShrink:'', justifyContent:'center', margin:'0', padding:'0'}}>
+  <li><a className="social"  href="https://www.facebook.com/pavandbroome" alt="Visit Pav &amp;Broome on Facebook" title="Visit Pav &amp; Broome on Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
+  <li><a className="social" href="https://g.page/pavandbroome?gm" alt="Visit Pav &amp;Broome on Google" title="Visit Pav &amp;Broome on Google"><FaGoogle /><span>Google</span></a></li>
+  <li><a className="social" href="https://twitter.com/PavAndBroome" alt="Visit Pav &amp;Broome on Twitter" title="Visit Pav &amp;Broome on Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
+  <li><a className="social" href="https://www.youtube.com/user/pavandbroome" alt="Visit Pav &amp;Broome on YouTube" title="Visit Pav &amp;Broome on YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
+  <li><a className="social" href="https://www.pinterest.com/source/pavandbroome.com" alt="Visit Pav &amp;Broome on Pinterest" title="Visit Pav &amp;Broome on Pinterest"><FaPinterestSquare /><span>Pinterest</span></a></li>
+  <li><a className="social" href="https://www.instagram.com/pavandbroomejewelers/" alt="Visit Pav &amp;Broome on Instagram" title="Visit Pav &amp;Broome on Instagram"><FaInstagramSquare /><span>Instagram</span></a></li>
+  
+  </ul>
+  
+  <p style={{textAlign:'left', padding:'1rem 1rem 0 1rem'}}>Your satisfaction is important to us. If you are not 100% satisfied with your experience, please contact us.</p>
+<p style={{textAlign:'left', padding:'0 1rem 0 1rem'}}>If you had a great experience, please take a few minutes to tell others, and give us a review.</p>
 <ul className="socialmenu" style={{display:'flex', textAlign:'center', justifyContent:'center', margin:'0 0', padding:'0'}}>
 <li><a className="social"  href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fg.page%2Fpavandbroome%2Freview%3Frc" alt="Review Pav &amp;Broome on Facebook" title="Review Pav &amp; Broome on Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
 

@@ -24,7 +24,7 @@ const CustomBox = styled.div`
 
 .presearch{text-align:center;}
 .presearch img{
-  max-width:160px;
+  max-width:100%;
   // max-height:20vh;
   background-attachment: fixed;
   background-size: cover;
@@ -252,11 +252,11 @@ const Search = () => {
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', border:'0px solid red', position:'absolute', zIndex:'1', borderRadius:'12px', position:'absolute',}}></div>
+<div style={{display:'block', width:'100vw', height:'100vh', border:'0px solid red', position:'absolute', zIndex:'1', borderRadius:'12px', position:'absolute'}}></div>
 
 
-            <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', marginTop:'14vh', height:'75vh', width:'75vw', position:'absolute', zIndex:'2' }}>
-              <div style={{background:'#fff', padding:'0', border:'0px solid red', boxShadow:'0 2px 3px 3px #999', borderRadius:'12px', }}>
+            <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', marginTop:'14vh', height:'75vh', width:'75vw', position:'absolute', zIndex:'2', top:'0' }}>
+              <div style={{background:'#fff', padding:'0', border:'0px solid red', boxShadow:'0 2px 3px 3px #999', borderRadius:'12px', position:'absolute', top:'0' }}>
 
 
 
@@ -284,9 +284,10 @@ const Search = () => {
         display: `grid`,
         gridTemplateColumns: `repeat( auto-fit, minmax(200px, 1fr) )`,
         gridGap: 20,
-        justifyContent: "space-between",
+        justifyContent: "space-around",
         width:'65vw',
-        height:'70vh',
+        height:'auto',
+        maxHeight:'60vh',
         overflow:'scroll',
         
       }}
