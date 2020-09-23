@@ -111,7 +111,7 @@ const Footer = class extends React.Component {
 
 
 
-  {/* <li className="flex-item" style={{padding:'0 2rem'}}>
+  <li className="flex-item" style={{padding:'0 2rem'}}>
  
     
  
@@ -125,7 +125,7 @@ Phone: <a className="call-button btn" href="tel:2288633699">(228) 863-3699</a>
 
 
 
-</li> */}
+</li>
 
 
 

@@ -7,7 +7,7 @@ import { Input } from '@rebass/forms';
 import styled from '@emotion/styled';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
-
+import { Link } from 'gatsby'
 import { useSearchContext } from './context';
 import SearchIcon from '../Icons/SearchIcon';
 import Close from '../Icons/Close';
@@ -255,7 +255,7 @@ const Search = () => {
 <div style={{display:'block', width:'100vw', height:'100vh', border:'0px solid red', position:'absolute', zIndex:'1', borderRadius:'12px', position:'absolute',}}></div>
 
 
-            <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', marginTop:'100px', height:'80vh', width:'75vw', position:'absolute', zIndex:'2' }}>
+            <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', marginTop:'14vh', height:'75vh', width:'75vw', position:'absolute', zIndex:'2' }}>
               <div style={{background:'#fff', padding:'0', border:'0px solid red', boxShadow:'0 2px 3px 3px #999', borderRadius:'12px', }}>
 
 
@@ -265,7 +265,7 @@ const Search = () => {
 
 
 
-              <Tabs style={{minWidth:'40vw', width:'58vw', minHeight:'40vh', border:'1px solid #222', borderRadius:'12px', overflow:'hidden'}}>
+              <Tabs style={{minWidth:'40vw', width:'68vw', minHeight:'40vh', border:'1px solid #222', borderRadius:'12px', overflow:'hidden',}}>
     <TabList>
       <Tab>Designers</Tab>
       <Tab>Jewelry</Tab>
@@ -276,34 +276,16 @@ const Search = () => {
     </TabList>
  
     <TabPanel style={{padding:'.5rem 1rem', color:'#333'}}>
-      <h2>World Renown Jewelry Designers</h2>
-
-
-
-
-
-
-{/* <ul style={{display:'flex', listStyleType:'none'}}>
-
-  <li><a href="https://pavandbroome.com/designers-collections/pav-broome-signature-collection-2/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/pav-and-broome-sig-collection-jewelry-search.png" width="260" height="188" alt="pav-and-broome-sig-collection-jewelry-search" /></span></a></li>
-
-  <li><a href="https://pavandbroome.com/designers-jewelry/a-jaffe/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/ajaffe-logo-and-pic-jewelry-search.png" width="260" height="188" alt="AJaffe designer jewelry engagement rings" /></span></a></li>
-
-  <li><a href="https://pavandbroome.com/designers-jewelry/benchmark/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/benchmark-jewelry-search.png" width="260" height="188" alt="benchmark--jewelry-search" /></span></a></li>
-
-</ul> */}
-  
-  
-
+      <h4>Browse Our World Renown Jewelry Designers</h4>
 
 
 <section className="presearch"
       style={{
         display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(180px, 1fr) )`,
-        gridGap: 18,
+        gridTemplateColumns: `repeat( auto-fit, minmax(200px, 1fr) )`,
+        gridGap: 20,
         justifyContent: "space-between",
-        width:'54vw',
+        width:'65vw',
         height:'70vh',
         overflow:'scroll',
         
@@ -501,73 +483,122 @@ const Search = () => {
 <a href="/engagement-rings/zeghani/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/zeghani-jewelry-search.png"  width="260" height="188" alt="zeghani-jewelry-search" /></span></a>
 
         </div>
-        
-
-
-{/*  */}
-{/*  */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </section>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  {/* </ul> */}
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-      {/* <p>Da bomb ipsizzle dolizzle sit amizzle, consectetuer adipiscing fo shizzle. Nullam yo velizzle, aliquet volutpizzle, fo shizzle yippiyo, for sure vizzle, arcu. Black eget fo shizzle. Sizzle erizzle. Rizzle at dolizzle dapibizzle turpis tempizzle izzle. Maurizzle crackalackin nibh et check out this. Cool check it out tortizzle. Break it down bling bling rhoncizzle my shizz. Fo hizzle rizzle platea boom shackalack. Gangsta dapibus. Owned tellus urna, pretizzle black, mattizzle ac, eleifend for sure, nunc. Owned suscipizzle. Integizzle sempizzle shiz sed purizzle.</p>
-
-      <p>Da bomb ipsizzle dolizzle sit amizzle, consectetuer adipiscing fo shizzle. Nullam yo velizzle, aliquet volutpizzle, fo shizzle yippiyo, for sure vizzle, arcu. Black eget fo shizzle. Sizzle erizzle. Rizzle at dolizzle dapibizzle turpis tempizzle izzle. Maurizzle crackalackin nibh et check out this. Cool check it out tortizzle. Break it down bling bling rhoncizzle my shizz. Fo hizzle rizzle platea boom shackalack. Gangsta dapibus. Owned tellus urna, pretizzle black, mattizzle ac, eleifend for sure, nunc. Owned suscipizzle. Integizzle sempizzle shiz sed purizzle.</p> */}
     </TabPanel>
+
+    {/* JEWELRY */}
     <TabPanel style={{padding:'1rem'}}>
       <h2>Jewelry</h2>
+<ul id="jewerlrySelector" style={{
+        display: `grid`,
+        gridTemplateColumns: `repeat( auto-fit, minmax(140px, 1fr) )`,
+        gridGap: 10,
+        justifyContent: "space-between",
+        width:'100%',
+        height:'70vh',
+        overflow:'scroll',
+        margin:'0',
+        padding:'0',
+        listStyleType:'none'
+        
+      }}>
+<li style={{
+            display: `flex`,
+            flexDirection: `column`,
+            padding: 5,
+            border: `1px solid #ccc`,
+            borderRadius: 8,
+            textAlign:'center',
+            justifyContent: "space-around",
+          }}>
+    <h4>Browse<br /> All Earrings</h4>
+    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/earrings-jewelry-search-trans.png" width="100%" alt="earrings-jewelry-search-trans" />
+    <Link>Vintage</Link>
+    <Link>Contemporary</Link>
+    <Link>Stud</Link>
+    <Link>Hoop</Link>
+          </li>
+          <li style={{
+            display: `flex`,
+            flexDirection: `column`,
+            padding: 5,
+            border: `1px solid #ccc`,
+            borderRadius: 8,
+            textAlign:'center',
+            justifyContent: "space-around",
+          }}>
+    <h4>Browse<br /> All Rings</h4> 
+    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/ring-jewelry-search-2.png" width="100%" height="auto" alt="rings-jewelry-search-trans" style={{margin:'2vh auto', maxWidth:'70%'}} />
+    <Link>Vintage</Link>
+    <Link>Contemporary</Link>
+    <Link>Stackable</Link>
+
+    
+          </li>
+          <li style={{
+            display: `flex`,
+            flexDirection: `column`,
+            padding: 5,
+            border: `1px solid #ccc`,
+            borderRadius: 8,
+            textAlign:'center',
+            justifyContent: "space-around",
+          }}>
+    <h4>Browse<br /> All Bracelets</h4>    
+
+    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/bracelet-pic-jewelry-search-trans.png " width="100%" height="auto" alt="bracelet-jewelry-search-trans" style={{margin:'0vh auto', maxWidth:'90%'}} />
+    <Link>Tennis</Link>
+    <Link>Bangle</Link>
+    <Link>Cuff</Link>
+
+          </li>
+          <li style={{
+            display: `flex`,
+            flexDirection: `column`,
+            padding: 5,
+            border: `1px solid #ccc`,
+            borderRadius: 8,
+            textAlign:'center',
+            justifyContent: "space-around",
+          }}>
+    <h4>Browse<br /> All Necklaces</h4>   
+
+    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/necklace-pic-jewelry-search-trans.png" width="100%" height="auto" alt="necklace-jewelry-search-trans" style={{margin:'0vh auto', maxWidth:'90%'}} />
+    <Link>Vintage</Link>
+    <Link>Contemporary</Link>
+    <Link>Layered</Link>
+    <Link>Bar</Link>
+    <Link>Cross</Link>
+    
+    
+          </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </TabPanel>
+    {/* TIMEPIECES */}
     <TabPanel style={{padding:'1rem'}}>
     <h2>Timepieces</h2>
+    <p>Da bomb ipsizzle dolizzle sit amizzle, consectetuer adipiscing fo shizzle. Nullam yo velizzle, aliquet volutpizzle, fo shizzle yippiyo, for sure vizzle, arcu. Black eget fo shizzle. Sizzle erizzle. Rizzle at dolizzle dapibizzle turpis tempizzle izzle. Maurizzle crackalackin nibh et check out this. Cool check it out tortizzle. Break it down bling bling rhoncizzle my shizz. Fo hizzle rizzle platea boom shackalack. Gangsta dapibus. Owned tellus urna, pretizzle black, mattizzle ac, eleifend for sure, nunc. Owned suscipizzle. Integizzle sempizzle shiz sed purizzle.</p>
+
+      <p>Da bomb ipsizzle dolizzle sit amizzle, consectetuer adipiscing fo shizzle. Nullam yo velizzle, aliquet volutpizzle, fo shizzle yippiyo, for sure vizzle, arcu. Black eget fo shizzle. Sizzle erizzle. Rizzle at dolizzle dapibizzle turpis tempizzle izzle. Maurizzle crackalackin nibh et check out this. Cool check it out tortizzle. Break it down bling bling rhoncizzle my shizz. Fo hizzle rizzle platea boom shackalack. Gangsta dapibus. Owned tellus urna, pretizzle black, mattizzle ac, eleifend for sure, nunc. Owned suscipizzle. Integizzle sempizzle shiz sed purizzle.</p>
     </TabPanel>
     <TabPanel style={{padding:'1rem'}}>
       <h2>Style</h2>
