@@ -31,10 +31,39 @@ const DisabledArea = styled(Box)`
   right: 0;
   bottom: 0;
   background: #000;
-  opacity: 0.4;
-  width: 100%;
-  height: 100%;
+  opacity: 1 ;
+
   overflow: 'hidden';
+
+
+   display:block;
+
+   margin:0 auto;
+
+  cursor:default;
+
+   transition: all 0.15s;
+
+  animation:fade 1s forwards;
+  overflow-y:auto;
+  background: rgba(0,0,0,0.50);
+  backdrop-filter: blur(10px);
+  width:100%;
+  height:100vh;
+
+  @keyframes fade {
+    0%{
+          opacity: 0;
+       }
+       20%{
+        opacity: 0;
+     }
+       100% {
+          opacity:1;
+       }
+    
+    }
+
 `;
 
 const SearchItem = styled(Box)`
@@ -90,8 +119,29 @@ const Search = () => {
       {showSidebar ? (
         <React.Fragment>
           <Sidebar width={[1, 1 / 3, 1 / 4]} sx={{ bg: 'white' }}>
-            <Flex flexDirection="column" m={[1, 2]}>
-              <Flex
+
+          <div onClick={toggleSidebar} style={{position:'absolute', top:'20px', right:'104px' }}>
+          <Flex
+                onClick={toggleSidebar}
+                justifyContent="space-between"
+                alignItems="center"
+                mb={2}
+                width={1}
+              >
+                
+                <Box ml="auto">
+                  <Close
+                    width="30px"
+                    height="30px"
+                    color=""
+                    sx={{ cursor: 'pointer' }}
+                  />
+                </Box>
+              </Flex> 
+                  </div>
+
+            <Flex flexDirection="column" m={[1, 2]} style={{marginTop:'-50px'}}>
+              {/* <Flex
                 onClick={toggleSidebar}
                 justifyContent="space-between"
                 alignItems="center"
@@ -107,7 +157,8 @@ const Search = () => {
                     sx={{ cursor: 'pointer' }}
                   />
                 </Box>
-              </Flex>
+              </Flex> */}
+              <Box>{searchLabel}</Box>
               <Box>
                 <Input
                   id="search"

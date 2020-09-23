@@ -114,14 +114,14 @@ input[type="checkbox"]:checked ~ #menupop .spinner{
     position: relative;
     float: left;
     margin-top: 5px;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .diagonal.part-1 {
     position: relative;
     transition: all 0.3s;
     box-sizing: border-box;
     float: left;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
 .diagonal.part-2 {
     transition: all 0.3s;
@@ -129,26 +129,27 @@ input[type="checkbox"]:checked ~ #menupop .spinner{
     position: relative;
     float: left;
     margin-top: 5px;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
     transition: all 0.3s;
     box-sizing: border-box;
     opacity: 0;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(135deg);
     margin-top: 8px;
-    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     transition: all 0.3s;
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -14px;
+    box-shadow: 0px 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .header{background:transparent !important; width:auto;}
 .modal-btn{box-shadow:none;}
