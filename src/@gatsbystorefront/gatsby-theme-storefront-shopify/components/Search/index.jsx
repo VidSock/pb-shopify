@@ -75,7 +75,7 @@ border-radius:12px;
 const Sidebar = styled(Box)`
   position: fixed;
   overflow: auto;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   right: 0;
   height: 100vh;
@@ -216,7 +216,7 @@ const Search = () => {
                   />
                 </Box>
               </Flex> */}
-              <Box>{searchLabel}</Box>
+              <Box style={{fontSize:'20px', margin:'20px 0 0 0'}}>{searchLabel}</Box>
               <Box>
                 <Input
                   id="search"
@@ -252,31 +252,31 @@ const Search = () => {
 
 
 
-<div style={{display:'block', width:'100vw', height:'100vh', border:'0px solid red', position:'absolute', zIndex:'0', borderRadius:'12px'}} onClick={toggleSidebar}></div>
+<div style={{display:'block', width:'100vw', height:'100vh', border:'0px solid red', position:'absolute', zIndex:'1', borderRadius:'12px', position:'absolute',}}></div>
 
 
-            <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', height:'100vh', width:'75vw', }}>
-              <div style={{background:'#fff', padding:'0', border:'0px solid red', zIndex:'5', position:'absolute', boxShadow:'0 2px 3px 1px black', borderRadius:'12px', }}>
-
-
-
+            <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', marginTop:'100px', height:'80vh', width:'75vw', position:'absolute', zIndex:'2' }}>
+              <div style={{background:'#fff', padding:'0', border:'0px solid red', boxShadow:'0 2px 3px 3px #999', borderRadius:'12px', }}>
 
 
 
 
 
-              <Tabs style={{minWidth:'40vw', maxWidth:'60vw', minHeight:'40vh', border:'1px solid #222', borderRadius:'12px', overflow:'hidden'}}>
+
+
+
+              <Tabs style={{minWidth:'40vw', width:'58vw', minHeight:'40vh', border:'1px solid #222', borderRadius:'12px', overflow:'hidden'}}>
     <TabList>
       <Tab>Designers</Tab>
-      <Tab>Bridal</Tab>
       <Tab>Jewelry</Tab>
       <Tab>Timepieces</Tab>
       <Tab>Style</Tab>
       <Tab>Occasion</Tab>
+      <Tab>Bridal</Tab>
     </TabList>
  
-    <TabPanel style={{padding:'.5rem 1rem'}}>
-      <h2>Designers</h2>
+    <TabPanel style={{padding:'.5rem 1rem', color:'#333'}}>
+      <h2>World Renown Jewelry Designers</h2>
 
 
 
@@ -300,8 +300,8 @@ const Search = () => {
 <section className="presearch"
       style={{
         display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(150px, 1fr) )`,
-        gridGap: 20,
+        gridTemplateColumns: `repeat( auto-fit, minmax(180px, 1fr) )`,
+        gridGap: 18,
         justifyContent: "space-between",
         width:'54vw',
         height:'70vh',
@@ -564,19 +564,19 @@ const Search = () => {
       <p>Da bomb ipsizzle dolizzle sit amizzle, consectetuer adipiscing fo shizzle. Nullam yo velizzle, aliquet volutpizzle, fo shizzle yippiyo, for sure vizzle, arcu. Black eget fo shizzle. Sizzle erizzle. Rizzle at dolizzle dapibizzle turpis tempizzle izzle. Maurizzle crackalackin nibh et check out this. Cool check it out tortizzle. Break it down bling bling rhoncizzle my shizz. Fo hizzle rizzle platea boom shackalack. Gangsta dapibus. Owned tellus urna, pretizzle black, mattizzle ac, eleifend for sure, nunc. Owned suscipizzle. Integizzle sempizzle shiz sed purizzle.</p> */}
     </TabPanel>
     <TabPanel style={{padding:'1rem'}}>
-      <h2>Bridal</h2>
-    </TabPanel>
-    <TabPanel style={{padding:'1rem'}}>
       <h2>Jewelry</h2>
     </TabPanel>
     <TabPanel style={{padding:'1rem'}}>
-      <h2>Timepieces</h2>
+    <h2>Timepieces</h2>
     </TabPanel>
     <TabPanel style={{padding:'1rem'}}>
       <h2>Style</h2>
     </TabPanel>
     <TabPanel style={{padding:'1rem'}}>
       <h2>Occasion</h2>
+    </TabPanel>
+    <TabPanel style={{padding:'1rem'}}>
+      <h2>Bridal</h2>
     </TabPanel>
   </Tabs>
 

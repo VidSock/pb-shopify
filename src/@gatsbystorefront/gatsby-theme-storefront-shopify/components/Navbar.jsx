@@ -266,10 +266,25 @@ const Navbar = (props) => {
               </>
             )} */}
             
-          <div style={{display:'inline-block', zIndex:'5', position:'relative' }}><img src={logo} style={{maxHeight:'60px', marginLeft:'3vw'}} /></div>
+          <div style={{display:'inline-block', zIndex:'1', position:'relative' }}><img src={logo} style={{maxHeight:'60px', marginLeft:'3vw'}} /></div>
 
 
-          <div id="rolex-clock-desk" style={{width:'150px', height:'70px', position:'absolute', top:'10px', right:'18vw', display:'none' }}>
+<div style={{position:'absolute', top:'20px', right:'170px'}}>
+<Text
+              as={GatsbyLink}
+              aria-label={ariaShoppingCartLabel}
+              to="/cart"
+              fontSize={3}
+              style={{ textDecoration: 'none', color:'#fff' }}
+              ml="auto"
+            >
+              
+              <ShoppingCart width="30px" height="30px" />
+             
+            </Text>
+</div>
+
+          <div id="rolex-clock-desk" style={{width:'150px', height:'70px', position:'absolute', top:'10px', right:'240px', display:'none' }}>
 <a href="https://pavandbroome.com/rolex/" style={{position:'absolute', zIndex:'1', top:'0', left:'0', display:'block', height:'70px', width:'150px',  border:'0px solid red',}}>
 </a>
  <iframe id="rolex_retailer" src="https://static.rolex.com/retailers/clock/?colour=gold&amp;apiKey=d8039e0fd25ac17bfcc3a0957d0c06bd&amp;lang=en_us"  scrolling="no" frameBorder="no" style={{width:'150px', height:'70px', border:'0', margin:'0', padding:'0', overflow:'hidden', position:'absolute', top:'0', left:'0', scroll:'none', zIndex:'0'}}></iframe>
@@ -311,20 +326,7 @@ const Navbar = (props) => {
    {/* <li><Search width="25px" height="25px" color="secondary" /></li>  */}
       {/* <li>Todd Lambert <span>Web Developer</span></li> */}
 
-      {/* <li>
-      <Text
-              as={GatsbyLink}
-              aria-label={ariaShoppingCartLabel}
-              to="/cart"
-              fontSize={3}
-              style={{ textDecoration: 'none', color:'#fff' }}
-              ml="auto"
-            >
-              
-              <ShoppingCart width="25px" height="25px" /> Cart
-             
-            </Text>
-      </li> */}
+
 
       <li>
               <Link className="navbar-item txtshadow" to="/simong/">
