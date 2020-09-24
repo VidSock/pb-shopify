@@ -12,6 +12,12 @@ import { useSearchContext } from './context';
 import SearchIcon from '../Icons/SearchIcon';
 import Close from '../Icons/Close';
 import strings from './strings.json';
+import PanelDesigners from './panel-designers';
+import PanelTimePieces from './panel-timepieces';
+import PanelJewelry from './panel-jewelry';
+import PanelStyle from './panel-style';
+import PanelOccassion from './panel-occassion';
+import PanelBridal from './panel-bridal';
 
 const { searchLabel, searchInputLabel } = strings;
 
@@ -243,15 +249,17 @@ const Search = () => {
               </Box>
             </Flex>
           </Sidebar>
+
+
+
           
           <DisabledArea>
 
 <div style={{display:'block', width:'100vw', height:'100vh', border:'0px solid red', position:'absolute', zIndex:'1', borderRadius:'12px', position:'absolute'}}></div>
 
-
             <div style={{display:'flex',  alignItems:'center', justifyContent:'center', border:'0px solid red', marginTop:'14vh', height:'75vh', width:'75vw', position:'absolute', zIndex:'2', top:'0' }}>
-              <div style={{background:'#fff', padding:'0', border:'0px solid red', boxShadow:'0 2px 3px 3px #999', borderRadius:'12px', position:'absolute', top:'0' }}>
 
+              <div style={{background:'#fff', padding:'0', border:'0px solid red', boxShadow:'0 2px 3px 3px #999', borderRadius:'12px', position:'absolute', top:'0' }}>
 
 
               <Tabs style={{minWidth:'40vw', width:'68vw', minHeight:'40vh', border:'1px solid #222', borderRadius:'12px', overflow:'hidden',}}>
@@ -265,466 +273,30 @@ const Search = () => {
     </TabList>
  
     <TabPanel style={{padding:'.5rem 1rem', color:'#333'}}>
-      <h4>Browse Our World Renown Jewelry Designers</h4>
-
-
-<section className="presearch"
-      style={{
-        display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(200px, 1fr) )`,
-        gridGap: 20,
-        justifyContent: "space-around",
-        width:'65vw',
-        height:'auto',
-        maxHeight:'60vh',
-        overflow:'scroll',
-        
-      }}
-    >
-      
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-          <a href="https://pavandbroome.com/designers-collections/pav-broome-signature-collection-2/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/pav-and-broome-sig-collection-jewelry-search.png" width="260" height="188" alt="pav-and-broome-sig-collection-jewelry-search" /></span></a>
-
-        </div>
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-          <a href="https://pavandbroome.com/designers-jewelry/a-jaffe/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/ajaffe-logo-and-pic-jewelry-search.png" width="260" height="188" alt="AJaffe designer jewelry engagement rings" /></span></a>
-
-        </div>
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-          <a href="https://pavandbroome.com/designers-jewelry/benchmark/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/benchmark-jewelry-search.png" width="260" height="188" alt="benchmark--jewelry-search" /></span></a>
-
-        </div>
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-          <a href="https://pavandbroome.com/designers-jewelry/gabriel-co/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/gabriel-co-jewelry-search.png" width="260" height="188" alt="gabriel-co-jewelry-search"/></span></a>
-
-        </div>
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-          <a href="/designers-collections/facet-barcelona/"><span><img  src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/facet-barcelona-jewelry-search.png" width="260" height="188" alt="facet-barcelona-jewelry-search" /></span></a>
-
-        </div>
-
-
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-          <a href="https://pavandbroome.com/ashi/"><span><img  src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/ashi-jewelry-search.png" width="260" height="188" alt="ashi-jewelry-search" /></span></a>
-
-        </div>
-
-        
-
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-<a href="https://pavandbroome.com/designers-collections/memoire/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/memoire-jewelry-search.png" width="260" height="188" alt="memoire-jewelry-search" /></span></a>
-
-        </div>
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-<a href="https://pavandbroome.com/designers-collections/michael-m/"><span><img  src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/michael-m-jewelry-search.png" width="260" height="188" alt="michael-m-jewelry-search" /></span></a>
-
-
-        </div>
-
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-
-<a href="https://pavandbroome.com/designers-collections/mikimoto/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/mikimoto-jewelry-search.png" width="260" height="188" alt="mikimoto-jewelry-search" /></span></a>
-        </div>
-
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-<a href="/simon-g/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/simon-g-jewelry-search.png"  width="260" height="188" alt="mikimoto-jewelry-search" /></span></a>
-
-        </div>
-
-
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-<a href="https://pavandbroome.com/engagement-rings/parade/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/parade-jewelry-search.png" width="260" height="188" alt="mikimoto-jewelry-search" /></span></a>
-
-        </div>
-
-
-
-
-        <div
-          style={{
-            display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `space-between`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-          }}
-        >
-
-<a href="/engagement-rings/zeghani/"><span><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/zeghani-jewelry-search.png"  width="260" height="188" alt="zeghani-jewelry-search" /></span></a>
-
-        </div>
-    </section>
+            <PanelDesigners />
     </TabPanel>
-
-
-    {/* JEWELRY */}
-    <TabPanel style={{padding:'1rem'}}>
-    <h2>Jewelry</h2>
-    <section className="presearch"
-      style={{
-        display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(200px, 1fr) )`,
-        gridGap: 20,
-        justifyContent: "space-around",
-        width:'65vw',
-        height:'auto',
-        maxHeight:'60vh',
-        overflow:'scroll',
-        
-      }}
-    >
-      
-<ul id="jewerlrySelector" style={{
-        display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(140px, 1fr) )`,
-        gridGap: 10,
-        justifyContent: "space-between",
-        width:'100%',
-        height:'40vh',
-        overflow:'scroll',
-        margin:'0',
-        padding:'0',
-        listStyleType:'none'
-        
-      }}>
-<li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-    <h4>Browse<br /> All Earrings</h4>
-    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/earrings-jewelry-search-trans.png" width="100%" alt="earrings-jewelry-search-trans" />
-    <Link to="/">Vintage</Link>
-    <Link to="/">Contemporary</Link>
-    <Link to="/">Stud</Link>
-    <Link to="/">Hoop</Link>
-          </li>
-          <li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-    <h4>Browse<br /> All Rings</h4> 
-    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/ring-jewelry-search-2.png" width="100%" height="auto" alt="rings-jewelry-search-trans" style={{margin:'2vh auto', maxWidth:'70%'}} />
-    <Link to="/">Vintage</Link>
-    <Link to="/">Contemporary</Link>
-    <Link to="/">Stackable</Link>
-
-    
-          </li>
-          <li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-    <h4>Browse<br /> All Bracelets</h4>    
-
-    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/bracelet-pic-jewelry-search-trans.png " width="100%" height="auto" alt="bracelet-jewelry-search-trans" style={{margin:'0vh auto', maxWidth:'90%'}} />
-    <Link to="/">Tennis</Link>
-    <Link to="/">Bangle</Link>
-    <Link to="/">Cuff</Link>
-
-          </li>
-          <li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-    <h4>Browse<br /> All Necklaces</h4>   
-
-    <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/04/necklace-pic-jewelry-search-trans.png" width="100%" height="auto" alt="necklace-jewelry-search-trans" style={{margin:'0vh auto', maxWidth:'90%'}} />
-    <Link to="/">Vintage</Link>
-    <Link to="/">Contemporary</Link>
-    <Link to="/">Layered</Link>
-    <Link to="/">Bar</Link>
-    <Link to="/">Cross</Link>
-    
-    
-          </li>
-</ul>
-
-
-</section>
-
-
+    <TabPanel style={{padding:''}}>
+            <PanelJewelry />
     </TabPanel>
-    {/* TIMEPIECES */}
-    <TabPanel style={{padding:'1rem'}}>
-    <h2>Timepieces</h2>
-    <div style={{
-            display: `flex`,
-            flexDirection: `row`,
-            padding: 0,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-            marginBottom:'.5rem',
-            height:'',
- 
-          }}>
-
-            <div style={{width:'60vw', display:'flex', flexDirection: `column`, textAlign:'center', justifyContent: "space-around", }}>
-            <h3>The Pav &amp; Broome Signature Collection</h3>
-            <Link to="/">View Pav &amp; Broome Watches</Link>
-            </div>
-
-            <img src="https://pavandbroome.com/admin/wp-content/uploads/2018/08/a4152ws-wht-2-300x300.jpg" width="100%" alt="earrings-jewelry-search-trans" style={{margin:'0vh auto', width:'auto', maxHeight:'200px'}} />
-            <img src="https://pavandbroome.com/admin/wp-content/uploads/2018/07/a9830trs-brn-300x300.jpg" width="100%" alt="earrings-jewelry-search-trans" style={{margin:'0vh auto', width:'auto', maxHeight:'200px'}} />
-            
-            
-
-          </div>
-          
-    <section className="presearch"
-      style={{
-        display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(200px, 1fr) )`,
-        gridGap: 20,
-        justifyContent: "space-around",
-        width:'65vw',
-        height:'auto',
-        maxHeight:'60vh',
-        overflow:'scroll',
-        
-      }}
-    >
-      
-<ul id="jewerlrySelector" style={{
-        display: `grid`,
-        gridTemplateColumns: `repeat( auto-fit, minmax(140px, 1fr) )`,
-        gridGap: 10,
-        justifyContent: "space-between",
-        width:'100%',
-        height:'40vh',
-        overflow:'scroll',
-        margin:'0',
-        padding:'0',
-        listStyleType:'none'
-        
-      }}>
-<li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-            <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/rolex-fine-watches-pic-jewelry-search-rolex-watch-collection.png" width="100%" alt="earrings-jewelry-search-trans" style={{margin:'3vh auto', maxWidth:'70%'}} />
-    <h4>The Coast's<br /> Rolex Dealer</h4>
-    
-    <Link to="/">View Rolex Watches</Link>
-          </li>
-          <li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-            <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/tudor-fine-watches-pic-jewelry-search-tudor-watch-collection.png" width="100%" height="auto" alt="rings-jewelry-search-trans" style={{margin:'2vh auto', maxWidth:'80%'}} />
-            <h4>The Coast's<br /> Tudor Dealer</h4>
-    
-    <Link to="/">View Tudor Watches</Link>
-    
-          </li>
-          <li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-            <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/fine-watches-pic-jewelry-search-tag-heuer.png" width="100%" height="auto" alt="bracelet-jewelry-search-trans" style={{margin:'2vh auto', maxWidth:'70%'}} />
-            <h4>The Coast's<br /> Tag Heuer Dealer</h4>  
-
-    
-    <Link to="/">View Tag Heuer Watches</Link>
-
-
-          </li>
-          <li style={{
-            display: `flex`,
-            flexDirection: `column`,
-            padding: 5,
-            border: `1px solid #ccc`,
-            borderRadius: 8,
-            textAlign:'center',
-            justifyContent: "space-around",
-          }}>
-            <img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/fine-watches-pic-jewelry-search-victorinox.png" width="100%" height="auto" alt="necklace-jewelry-search-trans" style={{margin:'0vh auto', maxWidth:'90%'}} />
-            <h4>The Coast's<br /> Victorinox Dealer</h4>  
-
-    
-    <Link to="/">View Victorinox Watches</Link>
-    
-    
-          </li>
-</ul>
-
-
-</section>
+    <TabPanel style={{padding:''}}>
+           <PanelTimePieces />
     </TabPanel>
-    <TabPanel style={{padding:'1rem'}}>
-      <h2>Style</h2>
+    <TabPanel style={{padding:''}}>
+          <PanelStyle />
     </TabPanel>
-    <TabPanel style={{padding:'1rem'}}>
-      <h2>Occasion</h2>
+    <TabPanel style={{padding:''}}>
+           <PanelOccassion />        
     </TabPanel>
-    <TabPanel style={{padding:'1rem'}}>
-      <h2>Bridal</h2>
+    <TabPanel style={{padding:''}}>
+          <PanelBridal />
     </TabPanel>
   </Tabs>
 
 
 
-
-
 </div>
 </div>
-              {/* end white area */}
+
 
           </DisabledArea>
         </React.Fragment>
