@@ -29,12 +29,9 @@ const PanelOccassion = () => (
       }}
     >
 
-   <div className="item"><Link to="">
-  
-   <Image alt="Temp Graphic" filename="shape-asscher.png" />
-   
-   <br />Asscher</Link>
-   </div>
+<div className="item"><Link to=""><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/amethyst-jewelry-search.png" alt="" />
+<br />Amethyst</Link>
+</div>  
 
    <div className="item"><Link to=""><img src="https://pavandbroome.com/admin/wp-content/uploads/2020/05/aquamarine-jewelry-search.png" alt="" />
    <br />Aquamarine</Link>

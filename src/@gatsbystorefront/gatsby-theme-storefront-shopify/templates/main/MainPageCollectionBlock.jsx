@@ -19,13 +19,13 @@ const StyledBox = styled(Box)`
     transition-delay: 0s;
   }
 
-  &:hover ${Image} {
-    transform: scale(1.05);
-    transition-property: all;
-    transition-duration: 0.6s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-  }
+  // &:hover ${Image} {
+  //   transform: scale(1.05);
+  //   transition-property: all;
+  //   transition-duration: 0.6s;
+  //   transition-timing-function: ease-in-out;
+  //   transition-delay: 0s;
+  // }
 `;
 
 const MainPageCollectionBlock = props => {
